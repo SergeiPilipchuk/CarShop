@@ -1,0 +1,19 @@
+USE  AVTOSALON
+GO
+
+CREATE VIEW CarXarak 
+AS
+SELECT M.ModelName,C.Marka,C.Strana,X.Dvigatel,X.Korobka,X.Loshad_sil,D.Cvet,D.Kuzov,D.Cena
+FROM Cars C,Models M,Xarak_ki X,Details D
+WHERE C.CarID=D.CarID AND C.CarID=X.CarID AND C.ModelID=M.ModelID
+
+
+2)
+USE  AVTOSALON
+GO
+
+CREATE VIEW OrdKlient 
+AS
+SELECT O.OrderID,K.FIO,OC.CarID,O.OrderDate
+FROM Orders O,Klients K,OrdCar OC
+WHERE O.OrderID=OC.OrderID AND O.KlientID=K.KlientID

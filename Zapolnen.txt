@@ -1,0 +1,76 @@
+USE AVTOSALON;
+
+INSERT INTO Models(ModelName) 
+                 VALUES ('Audi');
+
+INSERT INTO Cars(ModelID,Marka,Strana) 
+                 VALUES (1,'A4','Germany');
+INSERT INTO Xarak_ki(Loshad_sil,CarID,Dvigatel,Korobka) 
+                 VALUES (150,1,2,'mehan');   
+INSERT INTO Details(Cena,CarID,Cvet,Kuzov) 
+                 VALUES (1100000,1,'black','sedan');
+INSERT INTO Klients(FIO,Tel) 
+                 VALUES ('Stahnuk_Nikolay_Fedorovich',456728);
+INSERT INTO Orders(OrderDate,KlientID) 
+                 VALUES ('2012.05.20',1);
+INSERT INTO OrdCar(CarID,OrderID) 
+                 VALUES (1,1);
+
+ INSERT INTO Models(ModelName) 
+                 VALUES ('Nissan');
+INSERT INTO Cars(ModelID,Marka,Strana) 
+                 VALUES (2,'X-trail','Japan');
+INSERT INTO Xarak_ki(Loshad_sil,CarID,Dvigatel,Korobka) 
+                 VALUES (180,2,2.2,'avtomat'); 
+INSERT INTO Details(Cena,CarID,Cvet,Kuzov) 
+                 VALUES (995000,2,'silver','universal');
+INSERT INTO Klients(FIO,Tel) 
+                 VALUES ('Vasya',263952);
+INSERT INTO Orders(OrderDate,KlientID) 
+                 VALUES ('2011.06.20',2);
+INSERT INTO OrdCar(CarID,OrderID) 
+                 VALUES (2,2); 
+
+
+INSERT INTO Models(ModelName) 
+                 VALUES ('Mazda');
+INSERT INTO Cars(ModelID,Marka,Strana) 
+                 VALUES (3,'3','Japan');
+INSERT INTO Xarak_ki(Loshad_sil,CarID,Dvigatel,Korobka) 
+                 VALUES (130,3,1.6,'mehan'); 
+INSERT INTO Details(Cena,CarID,Cvet,Kuzov) 
+                 VALUES (630000,3,'siniy','hadgbak');
+INSERT INTO Klients(FIO,Tel) 
+                 VALUES ('Pilipchuk_Sergey_Nikolaevich',553467);
+INSERT INTO Orders(OrderDate,KlientID) 
+                 VALUES ('2011.06.20',3);
+INSERT INTO OrdCar(CarID,OrderID) 
+                 VALUES (3,3); 
+
+
+INSERT INTO Models(ModelName) 
+                 VALUES ('Pego');
+INSERT INTO Cars(ModelID,Marka,Strana) 
+                 VALUES (4,'4007','Franciya');
+INSERT INTO Xarak_ki(Loshad_sil,CarID,Dvigatel,Korobka) 
+                 VALUES (170,4,2.0,'mehan'); 
+INSERT INTO Details(Cena,CarID,Cvet,Kuzov) 
+                 VALUES (1000000,4,'black','krossover');
+INSERT INTO Orders(OrderDate,KlientID) 
+                 VALUES ('2012.12.03',2);
+INSERT INTO OrdCar(CarID,OrderID) 
+                 VALUES (4,4); 
+                 
+
+INSERT INTO Cars(ModelID,Marka,Strana) 
+                 VALUES (2,'Patrol','Japan');
+INSERT INTO Xarak_ki(Loshad_sil,CarID,Dvigatel,Korobka) 
+                 VALUES (405,5,5.6,'mehan'); 
+INSERT INTO Details(Cena,CarID,Cvet,Kuzov) 
+                 VALUES (3149900,5,'silver','vnedorognik');
+INSERT INTO Klients(FIO,Tel) 
+                 VALUES ('Vadim',235564);
+INSERT INTO Orders(OrderDate,KlientID) 
+                 VALUES ('2015.06.20',4);
+INSERT INTO OrdCar(CarID,OrderID) 
+                 VALUES (5,5);                  

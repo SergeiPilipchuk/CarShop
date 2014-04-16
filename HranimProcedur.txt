@@ -1,0 +1,9 @@
+USE  AVTOSALON
+GO
+
+CREATE PROCEDURE OrdersByDate
+@Dat DATE
+AS
+SELECT O.OrderID,K.FIO,OC.CarID,O.OrderDate
+FROM Orders O,Klients K,OrdCar OC
+WHERE O.OrderID=OC.OrderID AND O.KlientID=K.KlientID AND O.OrderDate=@Dat
